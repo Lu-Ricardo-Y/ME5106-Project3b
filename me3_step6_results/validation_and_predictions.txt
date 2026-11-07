@@ -1,0 +1,31 @@
+Validation: 46 fully labelled groups, 14 distinct settings
+
+Leave one sample group out
+Subset | Model | N | Power MAE W | Power RMSE W | Speed MAE mm/s | Speed RMSE mm/s
+All | Median baseline | 46 | 30.22 | 54.58 | 81.52 | 110.58
+All | Duration-only ridge | 46 | 35.58 | 55.91 | 72.53 | 87.12
+All | Acoustic-feature ridge | 46 | 37.03 | 55.69 | 44.24 | 54.87
+Repeated combinations | Median baseline | 36 | 12.50 | 25.00 | 75.00 | 106.07
+Repeated combinations | Duration-only ridge | 36 | 19.51 | 29.40 | 61.14 | 74.45
+Repeated combinations | Acoustic-feature ridge | 36 | 21.53 | 28.49 | 44.87 | 54.64
+Singleton combinations | Median baseline | 10 | 94.00 | 107.03 | 105.00 | 125.50
+Singleton combinations | Duration-only ridge | 10 | 93.43 | 106.15 | 113.55 | 122.29
+Singleton combinations | Acoustic-feature ridge | 10 | 92.84 | 106.52 | 41.94 | 55.67
+
+Leave one power-speed combination out
+Subset | Model | N | Power MAE W | Power RMSE W | Speed MAE mm/s | Speed RMSE mm/s
+All | Median baseline | 46 | 30.22 | 54.58 | 81.52 | 110.58
+All | Duration-only ridge | 46 | 46.18 | 62.37 | 103.42 | 115.40
+All | Acoustic-feature ridge | 46 | 50.19 | 65.05 | 69.34 | 88.24
+Repeated combinations | Median baseline | 36 | 12.50 | 25.00 | 75.00 | 106.07
+Repeated combinations | Duration-only ridge | 36 | 33.06 | 42.91 | 100.61 | 113.41
+Repeated combinations | Acoustic-feature ridge | 36 | 38.34 | 47.49 | 76.95 | 95.33
+Singleton combinations | Median baseline | 10 | 94.00 | 107.03 | 105.00 | 125.50
+Singleton combinations | Duration-only ridge | 10 | 93.43 | 106.15 | 113.55 | 122.29
+Singleton combinations | Acoustic-feature ridge | 10 | 92.84 | 106.52 | 41.94 | 55.67
+
+Predictions from the acoustic-feature ridge (lambda=5.0)
+Group | Power W | Speed mm/s | Speed source | Features outside training range
+41 | 236.73 | 708.12 | predicted | 0 / 5
+43 | 269.30 | 592.37 | predicted | 0 / 5
+49 | 270.61 | 850.00 | given | 1 / 5
